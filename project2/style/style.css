@@ -1,0 +1,21 @@
+* {
+    margin: 0; /* сброс внешних отступов */
+    padding: 0; /* сброс внутренних отступов */
+}
+.item {
+    width: 200px; /* ширина блока */
+    height: 200px; /* высота блока */
+    background-color: royalblue; /* цвет фона. */
+}
+.item-2 {
+    margin-left: 200px;
+    background-color: darksalmon;
+}
+.item-3 {
+    margin-left: 400px;
+    background-color: yellowgreen;
+}
+.item-4 {
+    margin-left: 600px;
+    background-color: rgb(250, 149, 25);
+}
