@@ -2,20 +2,64 @@
     margin: 0; /* сброс внешних отступов */
     padding: 0; /* сброс внутренних отступов */
 }
+header {
+    height: 40px; /* высота блока(px, % ...) */
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    transition: 3s;
+}
+h1:hover {
+    color: red;
+    transform: scale(1.5);
+}
+main {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap; /* отменить выстравание элементов в одну строку. разрешает элементам переходить на новую строку */
+    justify-content: center;
+    background-color: #f2f2f2;
+    border-radius: 8px; /* закругление углов. чем больше значение, тем круглее */
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5); /* тень блока */
+}
 .item {
-    width: 200px; /* ширина блока */
-    height: 200px; /* высота блока */
-    background-color: royalblue; /* цвет фона. */
+    width: calc(50% - 20px);
+    height: 250px;
+    margin: 10px;
+    background-size: contain;  /* cover, contain  */
+    background-repeat: no-repeat; /* не повторять картинку, если она меньше, чем блок */
+    background-position: center;
+    transition: 1s;
+}
+.item:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+.item-1 {
+    background-image: url(../images/img1.jpg);
 }
 .item-2 {
-    margin-left: 200px;
-    background-color: darksalmon;
+    background-image: url(../images/img2.jpg);
 }
-.item-3 {
-    margin-left: 400px;
-    background-color: yellowgreen;
-}
-.item-4 {
-    margin-left: 600px;
-    background-color: rgb(250, 149, 25);
-}
+
+/*
+    1. cover - растягивает кратинку по ширине, а высота масштабируется автоматически
+    2. contain - растягивает картинку по высоте, а ширина масштабируется автоматически
+
+
+    Блочные элементы - article, div, main, header, h1, p. По умолчанию занимают 100% ширины родительского блока
+    Строчные элементы -  
+
+    Свойтсво display: flex; - позволяет позицинировать все элемент в одну строку
+    Когда вы использовали display:flex, открывается возможность добавить другие свойства
+    для позиционирования
+
+    calc() - позволяет динамично посчитать размер элемента, исполльзуя арифм. операции
+
+    ДЗ. https://flexboxfroggy.com/#ru пройти все 24 уровня
+
+    */
