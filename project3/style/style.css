@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -22,3 +26,47 @@ a {
     font-size: 25px;
     text-decoration: none; /* убираем нижнее подчеркивание */
 }
+a:not(:last-child) {
+    margin-right: 20px;
+}
+.social-icon:not(:last-child) {
+    margin-right: 20px;
+}
+/* О нас */
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-img {
+    width: 50%;
+}
+.about-info {
+    width: 50%;
+    padding: 0 65px;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-descr {
+    font-size: 20px;
+    text-align: justify; /* выравнивание текста по ширине */
+    background-color: #1ABC9C;
+}
+/*
+    Задача. Добавить отступ 20px для иконок. 
+*/
+/*
+    :first-child - стиль применится к первому элементу из нескольких родственных
+    :last-child - стиль применится к последнему элементу из нескольких родственных
+
+
+    :not() - отрицание, инверсия
+
+    max-width - максимальная ширина элемента
+
+    h1 по умолчанию font-size 32px и font-weight 600
+    p по умолчанию font-size 16px и font-weight 400
+*/
