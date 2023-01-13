@@ -13,9 +13,7 @@ header {
     height: 70px;
     background-color: #1ABC9C;
 }
-.wrapper {
-    width: 90%;
-    margin: auto;
+.header-wrapper {
     height: 70px;
     display: flex;
     justify-content: space-between;
