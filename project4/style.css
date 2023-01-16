@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(199, 199, 199);
+}
+nav {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* отступы между элементами внутри флекс контейнера */
+}
+.nav-link {
+    font-size: 24px;
+}
+section {
+    height: 100vh;
+}
+#red {
+    background-color: rgb(188, 66, 66);
+}
+#green {
+    background-color: rgb(63, 198, 72);
+}
+#yellow {
+    background-color: rgb(223, 223, 89);
+}
+#blue {
+    background-color: rgb(84, 98, 203);
+}
+.red {
+    color: red;
+}
+/*
+    ctrl+f
+
+    Селекторы:
+    1. по тегу - h1
+    2. по классу .item
+    3. по id - #red
+
+    vh - view height. 100vh - это высота рабочего окна браузера
+    1vh - 1/100 от высоты окна браузера
+
+    Задача:
+    Каждому section добавить id с любым цветом и перекрасить блоки в цвета, которые соотв-т id
+*/
