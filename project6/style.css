@@ -1,0 +1,11 @@
+.skill-scale-outer {
+    width: 700px;
+    height: 20px;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+.skill-scale-inner {
+    width: 70%;
+    height: 100%;
+    background-color: midnightblue;
+}

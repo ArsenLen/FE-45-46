@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* размеры ширины и высоты включают в себя padding */
+}
+/* мои навыки */
+.skills {
+    padding: 100px 0;
+}
+.skills-wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-info {
+    width: 40%;
+}
+.skills-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.skill-scale:not(:last-child) {
+    margin-bottom: 30px;
+}
+.skill-name {
+    color: #727272;
+    margin-bottom: 20px;
+}
+.skill-scale-outer {
+    height: 4px;
+    background-color: #C4C4C4;
+}
+.skill-scale-inner {
+    width: 70%;
+    height: 100%;
+    background-color: #34547A;
+}
+.skills-img {
+    display: block; /* картинка - не блочный элемент */
+    width: 50%;
+}
+
+/* 
+border: 1px solid black.
+border: толщина стиль цвет;
+*/
