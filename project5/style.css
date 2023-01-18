@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box; /* размеры ширины и высоты включают в себя padding */
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* обертка */
+.wrapper {
+    width: 60%;
+    margin: auto;
+}
 /* мои навыки */
 .skills {
     padding: 100px 0;
 }
 .skills-wrapper {
-    width: 60%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,8 +48,31 @@
     display: block; /* картинка - не блочный элемент */
     width: 50%;
 }
-
+/* Как я работаю */
+.process {
+    padding: 100px 0;
+    background-color: #EEEFF1;
+}
+.process-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+.process-descr {
+    width: 50%;
+    margin: 50px auto 60px; /* top right-left bottom */
+    color: #727272;
+    text-align: center;
+}
+.process-video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
 /* 
+    Задача. Посмотреть какие шрифты и их жирность используются на макете, подключить их
+
+    500x100
+    1000x200
 border: 1px solid black.
 border: толщина стиль цвет;
 */
