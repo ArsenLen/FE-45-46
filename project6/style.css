@@ -1,19 +1,6 @@
-.item {
-    width: 25%;
-    aspect-ratio: 1/1;
-    background-image: url(../project5/images/sticker.png);
-    background-size: cover;
-}
-.item-inner {
-    height: 100%; /* на всю высоту внешнего блока */
-    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
-    opacity: 0; /* прозрачность блока. 0 - прозрачный(невидимый) 1-непрозрачный. 0.5 прозрачный наполовину */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.item-inner:hover {
-    opacity: 1;
+main {
+    background-color: seagreen;
+    padding: 100px;
 }
 /* 
     visibility: hidden; - невидимый

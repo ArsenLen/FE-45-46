@@ -68,8 +68,83 @@ body {
     width: 100%;
     aspect-ratio: 16/9;
 }
+/* Проекты */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+}
+.sticker {
+    background-image: url(./images/sticker.png);
+}
+.laptop {
+    background-image: url(./images/laptop.png);
+}
+.projects-item-inner {
+    height: 100%; /* на всю высоту внешнего блока */
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    opacity: 0; /* прозрачность блока. 0 - прозрачный(невидимый) 1-непрозрачный. 0.5 прозрачный наполовину */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-item-inner:hover {
+    opacity: 1;
+}
+/* Форма */
+.form {
+    background-color: #EEEFF1;
+    padding: 100px 0;
+}
+.form-wrapper {
+    width: 30%;
+    margin: auto;
+}
+.form-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+.form-descr {
+    color: #727272;
+    margin: 50px 0 65px;
+    text-align: center;
+    line-height: 26px;
+}
+.form-control {
+    display: flex;
+    justify-content: space-between;
+}
+input[name="name"], input[name="email"] {
+    width: 45%;
+    padding: 20px;
+    border: none; /* убираем границы элемента (input) */
+    outline: none; /* убираем границы, которые появляются при фокусе */
+}
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 20px 0 50px;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    padding: 20px 45px;
+    background-color: #34547A;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase; /* буквы в верхнем регистре */
+}
 /* 
-    Задача. Посмотреть какие шрифты и их жирность используются на макете, подключить их
+    Задача. Разместить в строке по 4 элемента
 
     500x100
     1000x200
