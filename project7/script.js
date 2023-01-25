@@ -310,18 +310,18 @@ console.log(smth[2][1]) // ["Maria", 10]
 
 console.log(numbers.length)
 */
-
-const movies = ["Аватар", "Звездные войны"]
-// movies = [] // нельзя
-// movies[0] = "Аватар 2", movies[1] = {name: "Hello"} // можно
-console.log(movies)
-// добавить элемент "Гарри Поттер" в конец массива, используя метод push()
-movies.push("Гарри Поттер")
-console.log(movies) //  ['Аватар', 'Звездные войны', 'Гарри Поттер']
-// добавить в начало массива "Властелин колец"
-movies.unshift("Властелин колец")
-console.log(movies) // ['Властелин колец', 'Аватар', 'Звездные войны', 'Гарри Поттер']
-
+/* 
+    const movies = ["Аватар", "Звездные войны"]
+    // movies = [] // нельзя
+    // movies[0] = "Аватар 2", movies[1] = {name: "Hello"} // можно
+    console.log(movies)
+    // добавить элемент "Гарри Поттер" в конец массива, используя метод push()
+    movies.push("Гарри Поттер")
+    console.log(movies) //  ['Аватар', 'Звездные войны', 'Гарри Поттер']
+    // добавить в начало массива "Властелин колец"
+    movies.unshift("Властелин колец")
+    console.log(movies) // ['Властелин колец', 'Аватар', 'Звездные войны', 'Гарри Поттер']
+*/
 /*
     num** - квадрат
     Math.pow(num, index)
@@ -331,7 +331,11 @@ console.log(movies) // ['Властелин колец', 'Аватар', 'Зве
     3. Есть массив arr = [1, 4, 2, 6, 9]. Есть пустой массив squares = []. Нужно заполнить массив
         squares квардатами чисел из первого массива, используя методы push, unshift,shift, pop
         в итоге  squares = [1, 16, 4, 36, 81]
-    4. Используя методы push, unshift,shift, pop удалить из массива movies "Властелин колец" и "Звездные войны"
+        ['Властелин колец', 'Аватар', 'Звездные войны', 'Гарри Поттер']
+        1. shift()
+        2. pop(), pop()
+        3. push()
+    4. Используя методы push, unshift, shift, pop удалить из массива movies "Властелин колец" и "Звездные войны"
         В итоге в массиве должно остаться ["Аватар", "Гарри Поттер"]
 */
 /*
@@ -344,4 +348,253 @@ console.log(movies) // ['Властелин колец', 'Аватар', 'Зве
     200 фильмов [{name : "Аватар",duration : "1h 23min", preview : "https://.img"}, {}]
  */
 
-    Math.pow(10, 2) // 10^2 = 100
+    // Math.pow(10, 2) // 10^2 = 100
+/* 
+    const arr = [1, 4, 2, 6, 9]
+    const squares = []
+    const square1 = Math.pow(arr[0], 2)
+    squares.push(square1, Math.pow(arr[1], 2))
+*/
+
+/* 
+    Цикл - повторяющиая последовательность действий
+    for(условие) {
+        тело цикла
+    } 
+    Пока условие верно, то выполяется код в теле цикла
+    - выполнить операцию несколько раз автоматически, вместо того, чтобы делать ее вручную
+    - заполнить массив квадратами чисел из другого массива
+    - рендерим(отображаем) несколько html карточек (div)
+
+    for(инициализация; условие; завершающая цикл операция) {
+        тело цикла
+    }
+    for(let i = 0; i < N; i++) {
+        тело 
+    }
+    1. Инициализация - начальное значение счетчика
+    2. Условие - условие по которому будут выполняться действия. Пока верно действия выполняются,
+        как только оно становится ложным, тело не выполняется
+    3. Завершающая операция - действие, которое выполняется после выполнения тела цикла
+    4. Тело - алгоритм действий
+*/
+
+// Отобразить в консоли "Hello" 5 раз
+/* 
+    for (let i = 0; i < 5; i++) {
+        console.log(i) // 0, 1, 2, 3, 4
+        console.log("Hello")
+    }
+*/
+/*
+    1. i = 0, i < 5(0 < 5) - true, console.log("hello"); i++, i = 1
+    2. i = 1, i < 5(1 < 5) - true, console.log("hello"); i++, i = 2
+    3. i = 2, i < 5(2 < 5) - true, console.log("hello"); i++, i = 3
+    4. i = 3, i < 5(3 < 5) - true, console.log("hello"); i++, i = 4
+    5. i = 4, i < 5(4 < 5) - true, console.log("hello"); i++, i = 5
+    6. i = 5, i < 5(5 < 5) - false,(выйти из цикла) действие console.log("hello") не делаем, потому что условие false 
+*/
+
+// Задача. Вывести числа от 0 до 10 в консоли с помощью цикла for
+/* 
+    for(let i = 0; i <= 10; i++) {
+        console.log(i)
+    }
+*/ 
+// Задача. Попросить пользователя ввести число 3 раза
+/*
+    for(let i = 0; i < 3; i++) {
+        prompt("введите число")
+    }
+*/
+
+/*  // Вывести каждый элемент массива в консоли
+    const numbers = [2, 4, 6, 8, 10, 12]
+
+    console.log(numbers[0]) // 2
+    console.log(numbers[1]) // 4
+    console.log(numbers[2]) // 6
+    console.log(numbers[3]) // 8
+    console.log(numbers[4]) // 10
+    console.log(numbers[5]) // 12
+
+
+for(let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i])
+}
+
+    numbers.length = 6
+    1. i = 0, i < numbers.length (0 < 6) - true, console.log(numbers[0]); i++, i = 1,
+    2. i = 1, i < numbers.length (1 < 6) - true, console.log(numbers[1]); i++, i = 2,
+    3. i = 2, i < numbers.length (2 < 6) - true, console.log(numbers[2]); i++, i = 3,
+    4. i = 3, i < numbers.length (3 < 6) - true, console.log(numbers[3]); i++, i = 4,
+    5. i = 4, i < numbers.length (4 < 6) - true, console.log(numbers[4]); i++, i = 5,
+    6. i = 5, i < numbers.length (5 < 6) - true, console.log(numbers[5]); i++, i = 6,
+    7. i = 6, i < numbers.length (6 < 6) - false, выходим из цикла
+*/
+
+/*
+// Задача. Есть массив numbers. Вывести в консоль только положительные числа из этого массива
+    const numbers = [0, -100, 632, 0.5, -0.7, -100, 500] // 632, 0.5, 500
+
+    for(let i = 0; i < numbers.length; i++) {
+        // console.log(numbers[i])
+        if(numbers[i] > 0) {
+            console.log(numbers[i])
+        }
+    }
+
+    numbers.length = 7
+    1. i = 0, 0 < 7 - true, numbers[0] > 0, 0 > 0 -false, не выполняю console.log(), i++
+    2. i = 1, 1 < 7 - true, numbers[1] > 0, -100 > 0 - false, не выполняю console.log(), i++
+    3. i = 2, 2 < 7 - true, numbers[2] > 0, 632 > 0 -true, console.log(632), i++
+    ...
+    7. i = 6, 6 < 7 -true, numbers[6] > 0, 500 > 0 - true, console.log(500), i++
+    8. i = 7, 7 < 7 - false, выход из цикла
+*/
+
+// Есть массив numbers. Вывести только четные числа из этого массива
+
+/*
+const numbers = [7, 16, 32, 51, 100, 121, 40] // 16, 32, 100, 40
+
+for(let i = 0; i < numbers.length; i++) {
+    if(numbers[i] % 2 === 0) {
+        console.log(numbers[i])
+    }
+}
+
+
+    num % 2 === 0 - четное
+    num % 2 === 1 - нечетное
+
+    14 % 2 === 0 - true? - четное
+    15 % 2 === 1 - true? - нечетное
+
+
+    14 % 2 = 0
+    if(0) {
+        /// 
+    }
+    if(1) - true
+    if(2) - true
+    if(0) - false
+*/
+
+// Есть массив numbers. Нужно найти сумму его элементов.  
+/* 
+const numbers = [-100, 0, 43, -20, 150, 70, 15, 1.5]
+
+let sum = 0
+for(let i = 0; i < numbers.length; i++) {
+    sum = sum + numbers[i]
+}
+console.log(sum)
+
+/*
+    numbers.length = 8
+    sum = 0
+    1. i = 0, 0 < 8 - true, sum = sum + numbers[0], sum = 0 + (-100), sum = -100, i++
+    2. i = 1, 1 < 8 - true, sum = sum + numbers[1], sum = -100 + 0, sum = -100, i++
+    3. i = 2, 2 < 8 - true, sum = sum + numbers[2], sum = -100 + 43, sum = -57, i++
+    4. i = 3, 3 < 8 - true, sum = sum + numbers[3], sum = -57 + (-20), sum = -77, i++
+    5. i = 4, 4 < 8 - true, sum = sum + numbers[4], sum = -77 + 150, sum = 73, i++
+    6. i = 5, 5 < 8 - true, sum = sum + numbers[5], sum = 73 + 70, sum = 143, i++
+    7. i = 6, 6 < 8 - true, sum = sum + numbers[6], sum = 143 + 15, sum = 158, i++
+    8. i = 7, 7 < 8 - true, sum = sum + numbers[7], sum = 158 + 1.5, sum = 159.5, i++
+    9. i = 8, 8 < 8 - false, выходим из цикла
+*/
+
+/*
+// Есть массив numbers. Нужно найти сумму положительных элементов.  
+    const numbers = [-100, 0, 43, -20, 150, 70, 15, 1.5]
+
+    let sum = 0
+    for(let i = 0; i < numbers.length; i++) {
+        if(numbers[i] > 0) {
+            sum = sum + numbers[i]
+        }
+    }
+    console.log(sum)
+*/
+/* 
+    ДЗ. 
+    1. // Есть массив numbers. Нужно найти сумму нечетных элементов.
+        const numbers = [-100, 0, 43, -20, 150, 70, 15, 1.5]
+    2. Есть массив numbers. Нужно найти сумму четных и сумму нечетных элементов.
+        В консоли вывести разницу между ними (вычесть меньшее из большего)
+        const numbers = [-100, 0, 43, -20, 150, 70, 15, 1.5]
+*/
+
+/* 
+    Объект - тип данных, который позволяет хранить свойства какого-либо предмета или всего, что вас окружает.
+        Объект - совокупонсть свойств. 
+    Каждое свойство имеет название(ключ) и значение
+
+    Массив - это частный случай объекта, ключами которого являются индексы, т.е числа от 0 до N
+    const arr1 = [
+        // key : value
+        // 0 : "Сандалии"
+        "Сандалли"
+    ]
+    Массив объектов:
+    const shoes = [
+        {name: "Сандалии", price: 1504}, 
+        {name: "Ботинки", price: 3900}, 
+    ]
+    shoes[0].price // 1504 
+    shoes[1].price // 3900
+*/
+    const arr = [] // пустой массив
+    const obj = {} // пустой объект
+
+    const shoe = {
+        // key : value
+        // ключ : значение
+        name: "Сандалии",
+        price: 1504,
+        sostav: "Термопласт",
+        id: 58404409,
+        color: "Темно-синий",
+        category: "Обувь",
+        additional : {
+            country : "Китай",
+            sex : "Мужской"
+        },
+        sizes : ["21", "22", "23", "24"]
+    }
+    console.log(shoe.price) // 1504
+    console.log(shoe["name"]) // "Сандалии"
+    console.log(shoe)
+
+    /*
+        ДЗ. 
+        1. Создать объект, у которого будет название, цена и цвет. Вывести его в консоль
+        2. Создать объект user, у которого будет email, password, login, age.
+            Вывести в консоль год рождения пользователя, используя свойтсво age из объекта user
+        3. Есть массив prices. Нужно найти общую цену всех товаров внутри массива объектов prices
+            и вывести в консоли
+            const prices = [
+                {
+                    name: "Iphone 14",
+                    price : 100000
+                },
+                {
+                    name: "Iphone 13",
+                    price : 80000
+                },
+                {
+                    name : "Iphone 12",
+                    price: 70000
+                }
+            ]
+    */
+/* 
+    Типы данных. 
+    Примитивами 
+    1. string - строка 
+    2. number - число 
+    ...
+    Сложные 
+    3. object - объект, частным случаем которого является массив. 
+*/
