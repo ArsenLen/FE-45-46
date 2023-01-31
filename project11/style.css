@@ -1,0 +1,14 @@
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    display: block;
+    width: 200px;
+    aspect-ratio: 2/1;
+    margin-bottom: 20px;
+}
+.images-container {
+    width: 70%;
+    margin: 0 auto;
+}
