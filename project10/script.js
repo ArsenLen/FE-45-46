@@ -79,22 +79,22 @@ redBtn.addEventListener('click', changeText)
 
         при нажатии на кнопку, в консоли отобразить ее название, т.е текст кнопки
 */
-const greenBtn = document.querySelector('.green-btn')
-const redBtn = document.querySelector('#red-btn')
-// Green 
-function changeColor(event) {
-    // event.target - кнопка на которую кликнули
-    // event.target.innerText // Red, Green
-    // if(event.target.className === "green-btn") {
-    //     // меняем на green
-    // } 
-    event.target.style.color = event.target.innerText
-}
-// event.target.id === "./img1.jpg", "./img2.jpg"
-// img.setAttribute('src', event.target.id)
-greenBtn.addEventListener('click', changeColor)
-redBtn.addEventListener('click', changeColor)
-
+/*
+    const greenBtn = document.querySelector('.green-btn')
+    const redBtn = document.querySelector('#red-btn')
+    // Green 
+    function changeColor(event) {
+        // event.target - кнопка на которую кликнули
+        // event.target.innerText // Red, Green
+        // if(event.target.className === "green-btn") {
+        //     // меняем на green
+        // } 
+        event.target.style.color = event.target.innerText
+    }
+    // event.target.id === "./img1.jpg", "./img2.jpg"
+    // img.setAttribute('src', event.target.id)
+    greenBtn.addEventListener('click', changeColor)
+    redBtn.addEventListener('click', changeColor)
 /*
     css({
         color: "white"
@@ -135,4 +135,41 @@ redBtn.addEventListener('click', changeColor)
             innerText: "Green", 
         }
     }
+*/
+
+// Задача. При нажатии на кпопку менять цвет body на соответствующий тексту нажатой кнопки.
+// Кликаем на кнопку  <button class="btn">Green</button>, цвет body задаем "Green"
+const buttons = document.querySelectorAll('.btn')
+buttons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        // const color = event.target.innerText
+        document.body.style.backgroundColor = event.target.innerText
+    })
+})
+
+// ДЗ. 1. При нажатии на кнопку img, менять фон body на картинку, которую нужно заранее подготовить
+//          На этапе получения текста, проверить, если в тексте есть img, то делаем одно
+//          иначе делаем document.body.style.backgroundColor = event.target.innerText
+
+// 2. На этапе получения текста, проверить, если(есть класс random-btn) в тексте(классе) есть random,
+// то менять цвет body на случайный.  Math.random() - случайное число. rgba(Math.random())
+
+/*
+    console.log(event) {
+        ...
+        target: {
+            ...
+            (...) - раскрыть остальные свойства
+            style : {
+                backroundColor
+            }
+        }
+    }
+        1. Найти все кнопки. querySelectorAll('')
+        2. Повесить слушатель на каждую кнопку. addEventListener() + forEach
+        3. Передать в addEventListener функцию, которая будет
+         а) считывать название нажатой кнопки <button class="btn">Green</button> --> Green; innerText
+         б) задать цвет body текстом из пункта а. document.body.style.backgroundColor = text из пунтка A
+        
+
 */

@@ -1,4 +1,40 @@
-.green-btn {
-    color: "White";
-    background-color: rgb(5, 10, 20);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding включен в размеры блока */
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    width: 400px;
+}
+.btn {
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    background-color: seagreen;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(38, 131, 78);
+}
+.btn:active {
+    transform: scale(1.01); 
+}
+.btn:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* 
+    cursor - свойство позволяющее изменить иконку курсора, при взаимодействие с элементом
+    1 - 100%
+    1.01 - 101%
+    :active - при клике на элемент, в момент клика
+*/
