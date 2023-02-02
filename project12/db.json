@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Meral", "last": "Tokgöz" },
+      "location": {
+        "street": { "number": 6075, "name": "Kushimoto Sk" },
+        "city": "Karaman",
+        "state": "Kırklareli",
+        "country": "Turkey",
+        "postcode": 12839,
+        "coordinates": { "latitude": "70.4008", "longitude": "71.6328" },
+        "timezone": {
+          "offset": "-11:00",
+          "description": "Midway Island, Samoa"
+        }
+      },
+      "email": "meral.tokgoz@example.com",
+      "login": {
+        "uuid": "ac5093d7-020a-4c4e-ac86-2c3dfcc3ff8f",
+        "username": "greendog776",
+        "password": "kappa",
+        "salt": "haNVp3yW",
+        "md5": "e471fa815e740ebdd0dbca0c2639d9d2",
+        "sha1": "486a0491ce613549264ca5c4aaa55d7c2b993c6e",
+        "sha256": "8a6d7104f99587f4029f1fa967a8315610cbbab4789ebc413fc5c00f71bff606"
+      },
+      "dob": { "date": "1956-04-29T18:41:53.258Z", "age": 66 },
+      "registered": { "date": "2019-09-12T00:46:04.137Z", "age": 3 },
+      "phone": "(772)-995-9733",
+      "cell": "(477)-359-5564",
+      "id": { "name": "", "value": null },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/91.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/91.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/91.jpg"
+      },
+      "nat": "TR"
+    }
+  ],
+  "info": {
+    "seed": "60c588acf68a9cb1",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
